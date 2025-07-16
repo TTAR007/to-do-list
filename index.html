@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Today ToDo</title>
+</head>
+<body>
+    <article class="wrap">
+        <h1>Today ToDo</h1>
+        
+        <article id="todo-container">
+            <button type="button" id="add-new-task-btn" onclick="openAddTask()">Add New Task +</button>
+        </article>
+    </article>
+
+    <article id="add-task-container">
+        <div id="head-container">
+            <h2>My task</h2>
+            <img src="images/close-icon.png" onclick="closeAddTask()" width="48" height="48" alt="close-icon">
+        </div>
+
+        <label for="task-name-input">Task name:</label>
+        <input type="text" name="task name" id="task-name-input" placeholder="task name e.g. Pick up my mom">
+
+        <label for="task-time-input">Time:</label>
+        <input type="text" name="task time" id="task-time-input" placeholder="time e.g. 10AM or After meeting">
+
+        <button type="button" id="add-task-btn" onclick="addTask()">Add task</button>
+    </article>
+
+    <script src="basic.js"></script>
+    <script src="addTask.js"></script>
+    <script src="deleteTask.js"></script>
+    <script src="local.js"></script>
+</body>
+</html>
