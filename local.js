@@ -16,7 +16,7 @@ function getLocal() {
         taskArray = JSON.parse(localStorage.getItem("tasks"));
 
         taskArray.forEach(function(task) {
-            displayTask(task);
+            displayTask(task); //display on screen
         })
     } else { // if local storage is null return ad let taskArray = []
         return;
